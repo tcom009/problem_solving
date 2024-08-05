@@ -1,4 +1,8 @@
 import { taxRates, inputs } from "./data.js";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69902fd85a622ce8f38922947e35fc9b84013d6a
 
 const roundValue = (value) => Math.ceil(value*20) /20
 const calculateBasicTax = (product)=>{
@@ -47,13 +51,22 @@ const results = inputs.map((sale)=>{
     const saleTaxes = getSalesTaxes(taxedProducts)
     const grandTotal =  taxedProducts.reduce((accumulator, product) => accumulator += product.itemTotal, 0)
     const result = { items: taxedProducts, saleTaxes, grandTotal}
+<<<<<<< HEAD
     console.log(result)
+=======
+>>>>>>> 69902fd85a622ce8f38922947e35fc9b84013d6a
     return result
 })
 
 
 results.forEach((result)=>{
+<<<<<<< HEAD
     result.items.forEach((item) => console.log(`${item.quantity} ${item.item} ${item.itemTotal.toFixed(2)}`))
     console.log(`Sales taxes: ${result.saleTaxes.toFixed(2)}`)
     console.log(`Total: ${result.grandTotal.toFixed(2)}`)
+=======
+    result.items.forEach((item) => console.log(`${item.quantity} ${item.item} ${item.itemTotal}`))
+    console.log(`Sales taxes: ${result.saleTaxes}`)
+    console.log(`Total: ${result.grandTotal}`)
+>>>>>>> 69902fd85a622ce8f38922947e35fc9b84013d6a
 } )
