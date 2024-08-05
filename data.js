@@ -1,8 +1,3 @@
-export const taxExckudedProducts ={
-    BOOKS: "BOOKS",
-    FOOD: "FOOD",
-    MEDICAL: "MEDICAL",
-}
 export const taxRates ={
     importedGoodsTax:0.05, 
     basicTax: 0.1
